@@ -1,0 +1,30 @@
+{
+    "name": "phpgl/flappyphpant",
+    "authors": [
+        {
+            "name": "Mario Döring"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "phpgl/ide-stubs": "dev-main",
+        "phpgl/visu": "@dev"
+    },
+    "scripts": {
+        "post-root-package-install": [
+
+        ],
+        "post-autoload-dump": [
+            "ClanCats\\Container\\ComposerContainerFileLoader::generateMap"
+        ]
+    }
+}
